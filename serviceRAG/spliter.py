@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 
-fichiers = ["rag.txt"]
+fichiers = ["rag.txt" ,"rag2.csv"]
 
 #1)fonction qui charge les fichier quelque soit le type 
 def charger (fichiers):
