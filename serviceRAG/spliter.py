@@ -10,8 +10,6 @@ warnings.filterwarnings("ignore")
 logging.getLogger("unstructured").setLevel(logging.ERROR)
 
 
-
-
 #1)fonction qui charge les fichier quelque soit le type 
 def charger (fichiers):
     all_docs = []

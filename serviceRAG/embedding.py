@@ -1,6 +1,7 @@
 import spliter ## j'importe toute les fonctiond de spliter 
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
+import spliter
 
 def embedding(dataSplited):
     # Créer des embeddings en local
@@ -14,3 +15,8 @@ def embedding(dataSplited):
         
         
     return vectorstore ## valeur de retour du conteneur de vecteur
+
+
+
+    
+    
