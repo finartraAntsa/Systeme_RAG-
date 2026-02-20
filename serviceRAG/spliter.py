@@ -11,7 +11,6 @@ logging.getLogger("unstructured").setLevel(logging.ERROR)
 
 
 
-fichiers = ["rag.txt" ,"rag2.csv","livre.pdf"]
 
 #1)fonction qui charge les fichier quelque soit le type 
 def charger (fichiers):
@@ -24,7 +23,6 @@ def charger (fichiers):
         print(all_docs)
     return all_docs
 
-do = charger(fichiers)
 
 #2) separation des text et formation d'un tableau de chunk 
 def spliter(document):
