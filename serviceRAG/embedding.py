@@ -1,4 +1,4 @@
-from spliter import* ## j'importe toute les fonctiond de spliter 
+import spliter ## j'importe toute les fonctiond de spliter 
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
@@ -13,4 +13,4 @@ def embedding(dataSplited):
     vectorstore.save_local("faiss_index")
         
         
-    return 
+    return vectorstore ## valeur de retour du conteneur de vecteur

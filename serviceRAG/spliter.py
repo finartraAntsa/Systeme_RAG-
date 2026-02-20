@@ -3,9 +3,15 @@
 from langchain_community.document_loaders import UnstructuredFileLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+import warnings
+import logging
+
+warnings.filterwarnings("ignore")
+logging.getLogger("unstructured").setLevel(logging.ERROR)
 
 
-fichiers = ["rag.txt" ,"rag2.csv"]
+
+fichiers = ["rag.txt" ,"rag2.csv","livre.pdf"]
 
 #1)fonction qui charge les fichier quelque soit le type 
 def charger (fichiers):
@@ -37,3 +43,5 @@ def spliter(document):
     return all_chunks
             
             
+warnings.filterwarnings("ignore")
+logging.getLogger("unstructured").setLevel(logging.ERROR)
