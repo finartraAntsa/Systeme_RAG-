@@ -1,7 +1,5 @@
-import spliter ## j'importe toute les fonctiond de spliter 
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-import spliter
 
 def embedding(dataSplited):
     # Créer des embeddings en local
@@ -13,10 +11,10 @@ def embedding(dataSplited):
     # Sauvegarder l'index pour l'utiliser plus tard
     vectorstore.save_local("faiss_index")
         
-        
+    print("Nombre de chunks :", len(dataSplited))
+    print("Premier chunk :", dataSplited[0].page_content[:100]) 
+       
     return vectorstore ## valeur de retour du conteneur de vecteur
 
 
 
-    
-    

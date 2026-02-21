@@ -6,9 +6,6 @@ from langchain_core.documents import Document
 import warnings
 import logging
 
-warnings.filterwarnings("ignore")
-logging.getLogger("unstructured").setLevel(logging.ERROR)
-
 
 #1)fonction qui charge les fichier quelque soit le type 
 def charger (fichiers):
@@ -18,8 +15,9 @@ def charger (fichiers):
         loader = UnstructuredFileLoader(fichier)
         docs = loader.load()  # liste de Document
         all_docs.extend(docs)
-        print(all_docs)
+      
     return all_docs
+
 
 
 #2) separation des text et formation d'un tableau de chunk 
